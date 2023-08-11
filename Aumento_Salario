@@ -1,0 +1,21 @@
+#Loja Descontão#
+salario_atual = float(input("Digite o Salario Atual: "))
+
+if salario_atual <= 280:
+    percentual = 20
+elif salario_atual <= 700:
+    percentual = 15
+elif salario_atual <= 1500:
+    percentual = 10
+else:
+    percentual = 5
+
+
+valor_aumento = salario_atual * (percentual/100)
+novo_salario = salario_atual + valor_aumento
+
+
+print(f"Salario Anterior de R$",salario_atual)
+print(f"Percentual de Aumento de ", percentual, "%")
+print(f"Valor do Aumento de: R$",valor_aumento)
+print(f"Novo Salario:  R$",novo_salario)
